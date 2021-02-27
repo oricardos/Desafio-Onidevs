@@ -17,6 +17,7 @@ Desafio Onidevs
 - É necessário instalar também o Crispy Forms com o comando `pip install django-crispy-forms`
 - Crie o banco de dados com: `python manage.py makemigrations` e depois `python manage.py migrate`
 - Crie um superuser para ter acesso ao admin com `python manage.py createsuperuser` com nome e senha ( email não é necessário)
+- Pra finalizar, vamos rodar o servidor com `python manage.py runserver`.
 - O Projeto está pronto para uso! 😁
 
 
