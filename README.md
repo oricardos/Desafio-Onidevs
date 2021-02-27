@@ -1,5 +1,12 @@
 # Desafio-Onidevs
-Desafio Onidevs 
+A empresa MusicOni Ltda é uma empresa fictícia de distribuição de música
+digital que está entrando para o mercado. Para ser bem-sucedida, esta empresa
+precisa de um sistema interno bem estruturado, que atenda às suas demandas, e às de
+seus artistas. Para isto, o CEO Oten Noslen contratou um programador, com o seguinte
+problema: “Tenho vários artistas em minha empresa. Cada um desses artistas pode ter
+várias músicas, e mensalmente, eu preciso recolher um relatório com todas estas
+músicas de cada artista, para uma análise de crescimento. Preciso que este sistema
+seja o mais automatizado possível, e disponível em uma página web.”
 
 ![alt text](https://github.com/oricardos/Desafio-Onidevs/blob/master/media/screenshot2.png)
 ###### Tela Inicial do Projeto
