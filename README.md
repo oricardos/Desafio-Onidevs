@@ -15,6 +15,9 @@ Desafio Onidevs
 - Ative o Ambiente Virtual `cd venv\Scripts\ ` e insira o comando `activate`. Certifique-se de executar com o cmd
 - Uma vez ativada, volte a raiz do projeto e instale o Django com o seguinte comando `pip install django`
 - É necessário instalar também o Crispy Forms com o comando `pip install django-crispy-forms`
+- Crie o banco de dados com: `python manage.py makemigrations` e depois `python manage.py migrate`
+- Crie um superuser para ter acesso ao admin com `python manage.py createsuperuser` com nome e senha ( email não é necessário)
+- O Projeto está pronto para uso! 😁
 
 
 
@@ -22,7 +25,7 @@ Desafio Onidevs
 ## Funcionamento do Projeto
 ### Login Admin
 Em seu navegador, vá até: [localhost:8000/admin](http://localhost:8000/admin)
-Para acessar basta inserir ```username:admin | password: 123456```
+Para acessar, basta inserir as informações que você criou no `python manage.py createsuperuser`
 
 
 ![alt text](https://github.com/oricardos/Desafio-Onidevs/blob/master/media/login-admin.gif)
