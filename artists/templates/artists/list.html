@@ -1,0 +1,62 @@
+{% extends 'artists/model.html' %}
+
+{% block title%}
+<title>Músicas Registradas</title>
+{% endblock %}
+
+{% block linkbutton%}
+<a href="{% url 'new_song' %}" class="a-button bts-bs">Adicionar Nova Música</a>
+{% endblock %}
+
+{% block content%}
+<main class="container">
+    <h1 class="title">Músicas Registradas</h1>
+
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Título</th>
+            <th scope="col">Artista</th>
+            <th scope="col">Duração / s</th>
+            <th scope="col">YouTube</th>
+            <th scope="col">Spotify</th>
+            <th scope="col">Mais</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for song in songs %}
+          <tr>            
+            <th scope="row">{{ song.title }}</th>
+            <td>{{ song.artist}}</td>
+            <td>{{ song.duration }}</td>
+            {% if song.youtube_published == True %}
+                <td>
+                    <i class="fas fa-check"></i>
+                </td>
+            {% else %}
+                <td>
+                    <i class="fas fa-times"></i>
+                </td>
+            {% endif %}
+            {% if song.spotify_published == True %}
+                <td>
+                    <i class="fas fa-check"></i>
+                </td>
+            {% else %}
+                <td>
+                    <i class="fas fa-times"></i>
+                </td>
+            {% endif %}
+            <td>
+                <a href="{% url 'url_update' song.id %}">
+                    <i class="fas fa-edit"></i> Editar Música
+                </a>
+            </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    
+    
+</main>
+{% endblock %}

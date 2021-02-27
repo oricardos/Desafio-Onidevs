@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="https://kit.fontawesome.com/3b48aa32f5.js" crossorigin="anonymous"></script>
+
+    {% block title %}
+    <title>Document</title>
+    {% endblock %}
+</head>
+<body>
+
+    {% block header %}
+    <div class="header">
+        <menu class="container">
+            <div class="logo">
+               <a href="{% url 'list' %}">
+                <img src="{% static 'img/logo.png' %}" alt="">
+               </a> 
+            </div>
+
+            {% block linkbutton %}
+            <a href="{% url 'new_song' %}" class="a-button">Adicionar Nova Música</a>
+            {% endblock %}
+        </menu>
+    </div>
+    {% endblock %}
+
+    {% block content %}
+    <main>
+
+    </main>
+    {% endblock %}
+    
+</body>
+</html>
