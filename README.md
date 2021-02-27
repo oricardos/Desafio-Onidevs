@@ -12,7 +12,7 @@ Desafio Onidevs
 ## Como Executar
 - Acesse a pasta do projeto através do Terminal
 - Crie um Ambiente Virtual na raiz do projeto com o seguinte comando: `python3 -m venv venv`
-- Ative o Ambiente Virtual `cd venv\Scripts\ ` e insira o comando `activate`. Certifique-se de executar com o cmd
+- Ative o Ambiente Virtual `cd venv\Scripts\` e insira o comando `activate`. Certifique-se de executar com o cmd
 - Uma vez ativada, volte a raiz do projeto e instale o Django com o seguinte comando `pip install django`
 - É necessário instalar também o Crispy Forms com o comando `pip install django-crispy-forms`
 - Crie o banco de dados com: `python manage.py makemigrations` e depois `python manage.py migrate`
