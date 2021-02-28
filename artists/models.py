@@ -1,3 +1,4 @@
+#https://docs.djangoproject.com/en/3.1/topics/db/models/
 from django.db import models
 
 # cria model Artist
